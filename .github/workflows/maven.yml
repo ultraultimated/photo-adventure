@@ -21,6 +21,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B package --file apigateway/pom.xml
-      run: mvn -B package --file photoappapiusers/pom.xml
-      run: mvn -B package --file photoappdiscoveryservice/pom.xml
+      run: mvn clean install --file apigateway/pom.xml
+      run: mvn clean install --file photoappapiusers/pom.xml
+      run: mvn clean install --file photoappdiscoveryservice/pom.xml
